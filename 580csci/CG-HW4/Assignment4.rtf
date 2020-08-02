@@ -1,0 +1,102 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq0\fcharset1 Times New Roman;}{\f5\froman\fprq0\fcharset1 Batang{\*\falt ??};}{\f6\fswiss\fprq0\fcharset1 Arial;}{\f7\fnil\fprq0\fcharset1 Batang{\*\falt ??};}{\f8\fnil\fprq0\fcharset1 Microsoft YaHei;}{\f9\fswiss\fprq0\fcharset1 Mangal;}{\f10\fnil\fprq0\fcharset1 Times New Roman;}{\f11\fnil\fprq0\fcharset1 Mangal;}}
+{\colortbl;\red0\green0\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\dbch\af12\langfe2052\dbch\af13\afs24\alang1081\loch\f3\fs24\lang1033 Normal;}
+{\*\cs15\snext15 Default Paragraph Font;}
+{\s16\sbasedon21\snext17\qj\nowidctlpar\sb240\sa120\keepn\ltrpar\cf1\kerning1\dbch\af8\langfe1042\dbch\af11\afs28\loch\f6\fs28\lang1033 Heading;}
+{\s17\sbasedon21\snext17\sl288\slmult1\qj\nowidctlpar\sb0\sa120\ltrpar\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\loch\f5\fs20\lang1033 Text Body;}
+{\s18\sbasedon17\snext18\sl288\slmult1\qj\nowidctlpar\sb0\sa120\ltrpar\cf1\kerning1\dbch\af7\langfe1042\dbch\af9\afs24\loch\f5\fs20\lang1033 List;}
+{\s19\sbasedon21\snext19\qj\nowidctlpar\sb120\sa120\noline\ltrpar\cf1\i\kerning1\dbch\af7\langfe1042\dbch\af9\afs24\ai\loch\f5\fs24\lang1033 Caption;}
+{\s20\sbasedon21\snext20\qj\nowidctlpar\noline\ltrpar\cf1\kerning1\dbch\af7\langfe1042\dbch\af9\afs24\loch\f5\fs20\lang1033 Index;}
+{\s21\snext21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033 Default;}
+}{\info{\title Assignment 2 for csci580 }{\author uneumann}{\creatim\yr2005\mo8\dy24\hr21\min12}{\revtim\yr2011\mo9\dy23\hr9\min43}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern67240962}}\deftab800\deftab800
+\viewscale100
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn11906\pghsxn16838\marglsxn1701\margrsxn1701\margtsxn1985\margbsxn1701\pgdscnxt0 Default Style;}}
+\formshade{\*\pgdscno0}\paperh16838\paperw11906\margl1701\margr1701\margt1985\margb1701\sectd\sbknone\sectunlocked1\pgndec\pgwsxn11906\pghsxn16838\marglsxn1701\margrsxn1701\margtsxn1985\margbsxn1701\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\qc{\b\afs28\alang1025\rtlch \ltrch\loch\fs28\loch\f4
+Assignment 4 for csci580}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\qc\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\qc{\alang1025\rtlch \ltrch\loch\loch\f4
+***  Adding Shading to the Gz rendering library\tab   ***}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+You will add a flexible shader to your Gz rendering library.  The renderer should continue to support flat-shading (like in HW2/HW3).  In addition, you should now support Phong shading of vertices with linear (screen space) color interpolation over the triangle. AND, you should support full Phong shading at each pixel with bilinear (screen space) normal interpolation over the triangle.}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+The shading mode is selected by choosing an interpolation mode. }
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+The GZ_INTERPOLATE flag selects between flat shading, vertex lighting with color interpolation, and normal interpolation with each pixel getting a separate lighting computation.}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+You must support two light types GZ_AMBIENT_LIGHT and a directional light specified by GZ_DIRECTIONAL_LIGHT.  Both are of type GzLight (in Gz.h).  The direction vector is only valid for directional lights and it is the vector from the scene to the light in image-space.  Direction is constant since we're assuming the light is very far away.  Ambient light direction has no meaning and is not used.}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+The API specifies that only one ambient light is supported, but multiple directional lights are legal (up to 10).  Lights are specified like most everything else, through a call to GzPutAttribute().  (see below)}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+The hw4 directory has the Gz.h file with comments for the items you need defined for the API.  }
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+Here is the list of items....}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\f4
+  }{\alang1025\rtlch \ltrch\loch\loch\f4
+GzPutAttribute must accept the following tokens and values:}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+token\tab \tab \tab \tab value type\tab }
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+-----------\tab \tab \tab          --------}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+GZ_RGB_COLOR\tab \tab \tab GzColor\tab \tab set default flat-shade color}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+GZ_INTERPOLATE          \tab int     \tab \tab shader interpolation mode }
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+GZ_DIRECTIONAL_LIGHT        GzLight\tab \tab add a directional light }
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+GZ_AMBIENT_LIGHT            GzLight\tab \tab set ambient light color}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\lang1036\loch\f4
+GZ_AMBIENT_COEFFICIENT     GzColor\tab \tab Ka ambient reflectance coef's}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\lang1036\loch\f4
+GZ_DIFFUSE_COEFFICIENT      GzColor\tab \tab Kd diffuse reflectance coef's}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\lang1036\loch\f4
+GZ_SPECULAR_COEFFICIENT         GzColor\tab \tab Ks specular reflectance coef's}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+GZ_DISTRIBUTION_COEFFICIENT     float\tab \tab specular power}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+Below are flag values used for GZ_INTERPOLATE values}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+Set GZ_INTERPOLATE as the shader interpolation mode to use}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+GZ_FLAT\tab \tab \tab 0\tab /* do flat shading with GZ_RBG_COLOR */}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\lang3082\loch\f4
+GZ_COLOR                     1       /* interpolate vertex color */}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+GZ_NORMALS                  2       /* interpolate normals */}
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+Gz.h also specifies a GzLight type which is needed since the application has to set up lights. }
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033\alang1025\rtlch \ltrch\loch
+
+\par \pard\plain \s21\qj\nowidctlpar\ltrpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf1\kerning1\dbch\af7\langfe1042\dbch\af10\afs24\alang1081\loch\f5\fs20\lang1033{\alang1025\rtlch \ltrch\loch\loch\f4
+P.S. If you have compile error related to GzLight, please delete dummy definition in your rend.h file. It}{\alang1025\rtlch \ltrch\loch\loch\f4
+'}{\alang1025\rtlch \ltrch\loch\loch\f4
+s defined in the new gz.h.}
+\par }
